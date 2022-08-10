@@ -1,0 +1,71 @@
+.message-input.error {
+    background: red;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+}
+
+
+.card {
+    margin: 0 auto;
+  height: 150px;
+  width: 75px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+}
+.yourcard{
+  display: flex;
+  flex-direction: row;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row div{
+  
+  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-around;
+}
+
+
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
+
+.ca::before,
+.ca::after {
+  position: relative;
+  content: attr(data-value);
+  font-size: 1rem;
+}
+
+.ca::before {
+  top: 60px;
+  left: 3.5rem;
+  transform: rotate(180deg);    
+}
+
+.ca::after {
+  bottom: 60px;
+  right: 3.5rem;
+  
+}

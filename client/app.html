@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+        .game{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Join the conversation</h1>
+
+    <ul class="feed"></ul> <!--this is where all the messages will appear-->  
+    
+    <form class="messaging-form" action="#">    <!--in this form you can send the message-->
+        <span class="feedback"></span>  <!--tels us who is typeing-->
+        <div class="message-input">     <!--place for your message-->
+            <span class="avatar">?</span>
+            <input type="text" class="message-input-field name-input" placeholder="Your name" />
+        </div>
+        
+        <button class="join">Join</button>
+    </form>
+
+
+    <button class="joingame">join in the game</button>
+    <button class="disconnect">disconnect from the game</button>
+    
+  
+
+    <div class="game">
+
+       
+        <div class="info"></div>
+    <button class="hitme">hit me</button>
+    <button class="stand">stand</button>
+    <button class="newg">new game</button>
+    <br>
+    <div class="yourcard"></div>
+    <br>
+    <input type="radio" id="chips1" name="chp" value="5">
+    <label for="chips1">5</label><br>
+    <input type="radio" id="chips2" name="chp" value="10">
+    <label for="chips2">10</label><br>
+    <input type="radio" id="chips3" name="chp" value="20">
+    <label for="chips3">20</label><br>
+    
+</div>
+    <div class="row">
+        <div>
+            <h2>player 1 cards</h2>
+            <div class="chips1"></div>
+            <ul class="cardrow ca"></ul>
+        </div>
+        <div>
+            <h2>player 2 cards</h2>
+            <div class="chips2"></div>
+            <ul class="pl2 ca"></ul>
+        </div>
+        <div>
+            <h2>dealer cards</h2>
+            <ul class="dealercards ca"></ul>
+        </div>
+        
+        
+    </div>
+   
+    
+    
+
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
